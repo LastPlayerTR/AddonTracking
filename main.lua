@@ -8,7 +8,7 @@ timer.Create("addontracking", 15, 0 , function()
         end,
   
         function( message )
-            print("license error")
+                
         end,
 
         { 
