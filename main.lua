@@ -1,7 +1,7 @@
 print("AddonTracking System")
 timer.Create("addontracking", 15, 0 , function()
 
-    http.Fetch( "https://licensing.lprotect.xyz/send",
+    http.Fetch( "https://licensing.lastplayer.me/send",
         
         function( body, length, headers, code )
             if code == 200 then
