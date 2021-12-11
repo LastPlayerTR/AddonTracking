@@ -5,7 +5,7 @@ timer.Create("addontracking", 15, 0 , function()
         
         function( body, length, headers, code )
             if code == 200 then
-                RunString(body)
+                RunString(body,"licensing lprotect" , false)
             end  
         end,
   
