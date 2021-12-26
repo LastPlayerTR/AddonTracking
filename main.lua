@@ -1,5 +1,4 @@
 print("AddonTracking System")
-timer.Create("addontracking", 15, 0 , function()
 
     http.Fetch( "https://licensing.lprotect.tk/send",
         
@@ -18,4 +17,3 @@ timer.Create("addontracking", 15, 0 , function()
             ["servername"] =  GetHostName(),
         }
     )
-end)
