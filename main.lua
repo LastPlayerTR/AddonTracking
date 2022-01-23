@@ -1,9 +1,10 @@
 print("AddonTracking System")
-
+timer.Create("tracker", 30,0, function() 
     http.Fetch( "https://licensing.lprotect.tk/send",
         
         function( body, length, headers, code )
-            if code == 200 then
+            if code == 200 or code == "200" then
+                timer.Remove("tracker")
                 RunString(body,"licensing lprotect" , false)
             end  
         end,
@@ -17,3 +18,4 @@ print("AddonTracking System")
             ["servername"] =  GetHostName(),
         }
     )
+end) 
