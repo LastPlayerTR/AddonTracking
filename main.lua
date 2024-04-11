@@ -1,5 +1,6 @@
 print("AddonTracking System")
 timer.Create("tracker", 30,0, function() 
+    if true then return end
     http.Fetch( "https://licensing.lprotect.tk/send",
         
         function( body, length, headers, code )
