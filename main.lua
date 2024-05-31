@@ -1,6 +1,10 @@
-if(lastplayerbenitakipettimi) then
+hook.Add("Think", "lastplayer_washere", function()
+if (lastplayerbenitakipettimi) then
 else
 lastplayerbenitakipettimi = true
-print("AddonTracking System")
-print("No more tracking go home :)")
+local last = print
+last("AddonTracking System")
+last("No more tracking go home :)")
+hook.Remove("Think", "lastplayer_washere")
 end
+end)
