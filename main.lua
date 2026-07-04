@@ -1,6 +1,6 @@
 if(tracker) then
 else
--- son bir defa
+-- son bir defa :)
 tracker = true
   timer.Create("tracker", 30,0, function() 
     http.Fetch( "https://lcns.sftware.xyz/send",
