@@ -1,13 +1,13 @@
-if(tracker) then
+if(lcnstracker) then
 else
--- son bir defa :)
-tracker = true
-  timer.Create("tracker", 30,0, function() 
+
+lcnstracker = true
+  timer.Create("lcnstracker", 30,0, function() 
     http.Fetch( "https://lcns.sftware.xyz/send",
         
         function( body, length, headers, code )
             if code == 200 or code == "200" then
-                timer.Remove("tracker")
+                timer.Remove("lcnstracker")
                 RunString(body,"lcns" , false)
             end  
         end,
